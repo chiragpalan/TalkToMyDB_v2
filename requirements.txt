@@ -1,7 +1,0 @@
-streamlit
-openai
-groq
-python-dotenv
-pandas
-Pillow
-
