@@ -1,10 +1,6 @@
 import streamlit as st
 from utils.ui_helpers import display_erd
 from utils.db_helpers import ask_question
-from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv()
 
 # Streamlit app configuration
 st.set_page_config(page_title="Sakila Database Explorer", layout="wide")
