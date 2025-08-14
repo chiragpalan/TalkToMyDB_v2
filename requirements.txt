@@ -13,4 +13,5 @@ chromadb
 sentence-transformers
 langchain 
 langchain-openai 
+load_dotenv
 openai
