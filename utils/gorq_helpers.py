@@ -1,10 +1,10 @@
-import os
+import streamlit as st
 from groq import Groq
 
 MODEL_NAME = "llama3-8b-8192"
 
-# Initialize Groq client
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+# Initialize Groq client using Streamlit Secrets
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 def nl_to_sql(question: str) -> str:
     """Convert a natural language question to SQL using Groq."""
