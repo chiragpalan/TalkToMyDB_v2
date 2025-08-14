@@ -4,4 +4,4 @@ groq
 python-dotenv
 pandas
 Pillow
-sqlite3
+
