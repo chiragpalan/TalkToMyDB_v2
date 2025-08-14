@@ -7,6 +7,6 @@ def display_erd():
     erd_path = Path("data/SQLite3 Sakila Sample Database ERD.png")
     if erd_path.exists():
         erd_image = Image.open(erd_path)
-        st.image(erd_image, caption="Sakila Database ERD", use_column_width=True)
+        st.image(erd_image, caption="Sakila Database ERD", use_container_width=True)
     else:
         st.error(f"ERD diagram not found at {erd_path}")
