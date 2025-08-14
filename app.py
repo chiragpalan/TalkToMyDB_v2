@@ -1,6 +1,6 @@
 import streamlit as st
-from utils.ui_helpers import display_erd
-from utils.db_helpers import ask_question
+from ui_helpers import display_erd
+from db_helpers import ask_question
 
 # Streamlit app configuration
 st.set_page_config(page_title="Sakila Database Explorer", layout="wide")
