@@ -1,11 +1,14 @@
 import sqlite3
 import pandas as pd
 from groq_helpers import nl_to_sql
+import os
 
-DB_PATH = "sakila.db"
+DB_PATH = os.path.join(os.getcwd(), "sakila.db")
 
 def get_connection():
     """Establish a connection to the SQLite database."""
+    if not os.path.exists(DB_PATH):
+        raise FileNotFoundError(f"Database file not found at {DB_PATH}")
     return sqlite3.connect(DB_PATH)
 
 def run_sql(sql: str) -> pd.DataFrame:
